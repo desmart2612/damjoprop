@@ -55,3 +55,18 @@ window.addEventListener('resize', () => {
   clearTimeout(window.carouselResizeTimeout);
   window.carouselResizeTimeout = setTimeout(buildCarousel, 300);
 });
+
+document.getElementById("whatsappForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  const name = document.getElementById("name").value.trim();
+  // const email = document.getElementById("email").value.trim();
+  const request = document.getElementById("request").value.trim();
+
+  const message = `Hello, my name is ${name}.\n\nRequest: ${request}`;
+  const encodedMessage = encodeURIComponent(message);
+
+  const phoneNumber = "+254710622406"; // Replace with your WhatsApp number in international format
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+  window.open(whatsappURL, "_blank");
+});

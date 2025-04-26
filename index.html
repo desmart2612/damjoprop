@@ -76,54 +76,78 @@
         </div>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators" id="carousel-indicators"></div>
-          
+
             <div class="carousel-inner" id="carousel-inner">
-              <!-- Cards will be inserted here dynamically -->
+                <!-- Cards will be inserted here dynamically -->
             </div>
-          
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-              <span class="visually-hidden">Previous</span>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-              <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
             </button>
-          </div>
-          
-          <!-- Hidden container holding original cards -->
-          <div id="card-data" class="d-none">
+        </div>
+
+        <!-- Hidden container holding original cards -->
+        <div id="card-data" class="d-none">
             <div class="card m-2">
-              <img src="static/images/plot1.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p>Price: Ksh <strong>1.2M</strong></p>
-                <p>Location: <strong>Muthaiga</strong></p>
-                <p>Size: <strong>1-acre</strong></p>
-              </div>
+                <img src="static/images/plot1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p>Price: Ksh <strong>1.2M</strong></p>
+                    <p>Location: <strong>Muthaiga</strong></p>
+                    <p>Size: <strong>1-acre</strong></p>
+                </div>
             </div>
             <div class="card m-2">
-              <img src="static/images/plot2.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p>Price: Ksh <strong>4.5M</strong></p>
-                <p>Location: <strong>Kinangop</strong></p>
-                <p>Size: <strong>3.2-acre</strong></p>
-              </div>
+                <img src="static/images/plot2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p>Price: Ksh <strong>4.5M</strong></p>
+                    <p>Location: <strong>Kinangop</strong></p>
+                    <p>Size: <strong>3.2-acre</strong></p>
+                </div>
             </div>
             <div class="card m-2">
-              <img src="static/images/plot3.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p>Price: Ksh <strong>950K</strong></p>
-                <p>Location: <strong>Murang'a</strong></p>
-                <p>Size: <strong>0.5-acre</strong></p>
-              </div>
+                <img src="static/images/plot3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p>Price: Ksh <strong>950K</strong></p>
+                    <p>Location: <strong>Murang'a</strong></p>
+                    <p>Size: <strong>0.5-acre</strong></p>
+                </div>
             </div>
             <div class="card m-2">
-              <img src="static/images/plot4.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p>Price: Ksh <strong>1.5M</strong></p>
-                <p>Location: <strong>Kiambu</strong></p>
-                <p>Size: <strong>1-acre</strong></p>
-              </div>
+                <img src="static/images/plot4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p>Price: Ksh <strong>1.5M</strong></p>
+                    <p>Location: <strong>Kiambu</strong></p>
+                    <p>Size: <strong>1-acre</strong></p>
+                </div>
+            </div>            
+        </div>
+        <div class="service">
+            <div class="services" style="width: fit-content;">
+                <p class="phrase">Other Services.</p>
+                <h2>Recover Lost Land Documents.</h2>
+                <div class="hr"></div>
+            </div>
+            <div class="row justify-content-evenly align-items-center p-3">
+                <div id="service-text" class="col-12 col-md-5 mx-0 mx-md-2 my-3">
+                    <h5>
+                        Have you accidentally lost some of
+                        your land documents or they have
+                        been damaged and require help in
+                        recovering them?
+                    </h5>
+                </div>
+                <div id="service-assist" class="mx-0 mx-md-2 my-3 col-12 col-md-5 d-flex flex-column justify-content-center align-items-center">
+                    <h5>Look no further, we’ve got you</h5>
+                    <h4 style="font-weight: bold;">Covered.</h4>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</button>
+                </div>
             </div>
         </div>
         <div class="text-center py-3 d-flex flex-column justify-content-center align-items-center" id="contacts">
@@ -153,19 +177,24 @@
 
         </div>
     </div>
-    <div class="modal" tabindex="-1">
+    <div class="modal" tabindex="-1" id="exampleModal">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content bg-info-subtle" data-bs-theme="dark">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
+                    <h5 class="modal-title text-light">Reach Out.</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Modal body text goes here.</p>
+                    <form class="form" id="whatsappForm">
+                        <input type="text" class="input" id="name" placeholder="Enter your name" required />
+                        <!-- <input type="text" class="input" placeholder="Enter your email" /> -->
+                        <textarea name="content" class="input" id="request" rows="5" placeholder="Enter any information" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Send via Whatsapp</button> -->
                 </div>
             </div>
         </div>
