@@ -171,11 +171,11 @@ nav .col {
   transform: translate3d(-5px, -5px, 0);
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
 }
-.card .card-text {
+.card .card-body {
   color: #fff;
   font-size: 18px;
-  text-align: center;
-  padding: 0;
+  text-align: left;
+  padding: 5px 10px;
 }
 .card strong {
   font-size: large;
