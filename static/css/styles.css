@@ -165,6 +165,7 @@ nav .col {
   padding: 0 !important;
   background-color: #006823;
   transition: all 0.3s ease-in-out;
+  height: 430px;
 }
 .card:hover {
   background-color: #005a35;
