@@ -98,36 +98,41 @@
             <div class="card m-2">
                 <img src="static/images/plot1.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <p>Price: Ksh <strong>1.2M</strong></p>
-                    <p>Location: <strong>Muthaiga</strong></p>
-                    <p>Size: <strong>1-acre</strong></p>
+                    <p>Price: Ksh <strong>4.5M</strong></p>
+                    <p>Location: <strong>Kasarani</strong></p>
+                    <p>Size: <strong>40 x 70</strong></p>
                 </div>
             </div>
             <div class="card m-2">
                 <img src="static/images/plot2.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <p>Price: Ksh <strong>4.5M</strong></p>
-                    <p>Location: <strong>Kinangop</strong></p>
-                    <p>Size: <strong>3.2-acre</strong></p>
+                    <p>Price: Ksh <strong>1.5M per acre</strong></p>
+                    <p>Location: <strong>Kinangop Nyandarua</strong></p>
+                    <p>Size: <strong>3-acre</strong></p>
                 </div>
             </div>
             <div class="card m-2">
                 <img src="static/images/plot3.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <p>Price: Ksh <strong>950K</strong></p>
-                    <p>Location: <strong>Murang'a</strong></p>
+                    <p>Price: Ksh <strong>2.8M</strong></p>
+                    <p>Location: <strong>Juja Farm</strong></p>
                     <p>Size: <strong>0.5-acre</strong></p>
                 </div>
             </div>
             <div class="card m-2">
                 <img src="static/images/plot4.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <p>Price: Ksh <strong>1.5M</strong></p>
-                    <p>Location: <strong>Kiambu</strong></p>
-                    <p>Size: <strong>1-acre</strong></p>
+                    <p>Price: Ksh <strong>3.2M</strong></p>
+                    <p>Location: <strong>Ruai</strong></p>
+                    <p>Size: <strong>1/4-acre</strong></p>
                 </div>
-            </div>            
+            </div>                       
         </div>
+        <div class="more" id="more">
+            <div class="bg">See more</div>
+            <div class="blob"></div>
+        </div>
+
         <div class="service">
             <div class="services" style="width: fit-content;">
                 <p class="phrase">Other Services.</p>
@@ -144,7 +149,7 @@
                     </h5>
                 </div>
                 <div id="service-assist" class="mx-0 mx-md-2 my-3 col-12 col-md-5 d-flex flex-column justify-content-center align-items-center">
-                    <h5>Look no further, we’ve got you</h5>
+                    <h5>Look no further, we've got you</h5>
                     <h4 style="font-weight: bold;">Covered.</h4>
                     <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</button>
                 </div>
@@ -161,11 +166,11 @@
                 <div class="col-12 col-md-6 contact-info">
                     <div class="phone d-flex align-items-center justify-content-evenly">
                         <img src="static/images/phone-contact-ezgif.com-gif-maker.gif" alt="">
-                        <h5>+254 712 345 678</h5>
+                        <h5>+254 715 140 279</h5>
                     </div>
                     <div class="mail d-flex align-items-center justify-content-evenly">
                         <img src="static/images/mail-ezgif.com-gif-maker.gif" alt="">
-                        <h5>info@example.com</h5>
+                        <h5>damjoproperties@gmail.com</h5>
                     </div>
                 </div>
 
@@ -187,9 +192,10 @@
                 <div class="modal-body">
                     <form class="form" id="whatsappForm">
                         <input type="text" class="input" id="name" placeholder="Enter your name" required />
+                        <input type="email" class="input" id="email" placeholder="Enter your email" required />
                         <!-- <input type="text" class="input" placeholder="Enter your email" /> -->
                         <textarea name="content" class="input" id="request" rows="5" placeholder="Enter any information" required></textarea>
-                        <button type="submit">Submit</button>
+                        <button type="submit" id="sendbtn">Send</button>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -202,6 +208,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("xEd5h1mVbclUtEavi"); // Replace with your actual public key
+    </script>
     <script src="static/js/script.js"></script>
 </body>
 

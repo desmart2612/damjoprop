@@ -45,7 +45,7 @@ nav {
   left: 0;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  z-index: 1000;
+  z-index: 10;
   width: 100vw;
 }
 nav .row {
@@ -412,5 +412,81 @@ nav .col {
     rgba(0, 0, 0, 0.5) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
     inset 0px -3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.more {
+  position: relative;
+  width: 130px;
+  height: 55px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  margin-left: 45%;
+  margin-top: 40px;
+  ;
+}
+
+.bg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 120px;
+  height: auto;
+  padding: 10px 20px;
+  z-index: 1;
+  background: rgba(3, 0, 43, 0.95);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.blob {
+  position: absolute;
+  /* z-index: 0; */
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* background-color: #ff0000; */
+  background: linear-gradient(
+    45deg,
+    rgba(255, 123, 0, 0.815),
+    rgba(47, 0, 255, 0.884)
+  );
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
 }
 

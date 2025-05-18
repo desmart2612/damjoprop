@@ -1,0 +1,164 @@
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 30px;
+    }
+    .prodrow{
+        justify-content: space-around !important;
+    }
+    .card{        
+        background-color: transparent !important;
+        border: none !important;
+    }
+    .card:hover{
+        background-color: transparent !important;
+        transform: none !important;
+        box-shadow: none !important;
+    }
+    .back{
+        width: 10% !important;
+        height: auto !important;
+        padding: 0.2rem !important;
+        top: 80vh !important;
+        left: 85vw !important;
+        z-index: 1000;
+    }
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+}
+.back{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    width: 3.5%;
+    padding: 0 0.2rem;
+    overflow-x: hidden;
+    background: linear-gradient(45deg, #00c3ff, #165efc);
+    color: #fff;
+    border-radius: 20px;
+    position: fixed;
+    top: 90vh;
+    left: 90vw;
+    z-index: 100;
+    transition: all 1s ease-in-out;
+
+    .text a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+.back:hover{
+    border-radius: 20px;
+    background: linear-gradient(45deg, #165efc, #00c3ff);    
+    cursor: pointer;
+    width: fit-content;
+
+}
+#hero{
+    background-image: url('../images/home2.jpg');
+}
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 2vh;
+    background: linear-gradient(270deg, #00c3ff, #ff0080, #00c3ff);
+    background-size: 400% 400%;
+    animation: title-gradient-move 10s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes title-gradient-move {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.prodrow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    margin: 0 5%;
+    .card{
+        width: fit-content;
+        transform: none;
+        background-color: inherit;
+        border: none;
+    }
+    .card:hover{
+        background-color: inherit;
+        transform: none;
+        box-shadow: none;
+    }
+}
+.image{
+    width: 90%;
+    height: 200px;
+    margin: 0 5%;
+    background: url('../images/house1.jpg');
+    background-size: cover;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.relative{
+    transition: all 0.3s ease;
+    h5{        
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
+    }
+}
+.relative:hover{
+    .image{
+        transform: translateY(-5%);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);        
+    }
+    cursor: pointer;
+    transform: translate3d(5px, 5px, -5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+    
+}
+.more{
+    background: linear-gradient(45deg, #00c3ff, #165efc);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    margin: 0px;
+    z-index: 0;
+}
+footer{
+    background-color: #272727;
+    padding: 20px;
+    text-align: start;
+    font-size: 14px;
+    color: #ffffff;
+    width: 100vw;
+    margin-top: 1.5rem;
+}
+.modal-content{
+    border-radius: 10px;
+}
