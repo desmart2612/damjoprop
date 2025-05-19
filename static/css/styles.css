@@ -376,7 +376,7 @@ nav .col {
     0,
     0.6
   ); /* Darker glassy background on hover/focus */
-  transform: scale(1.05) rotateY(20deg);
+  transform: scale(1.05) rotateY(5deg);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
   outline: none;
 }
@@ -408,7 +408,7 @@ nav .col {
     0.2
   ); /* Slightly lighter hover effect */
   font-size: 17px;
-  transform: scale(1.05) rotateY(20deg) rotateX(10deg);
+  transform: scale(1.05) rotateY(5deg) rotateX(10deg);
   box-shadow:
     rgba(0, 0, 0, 0.5) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
@@ -420,7 +420,7 @@ nav .col {
   width: 130px;
   height: 55px;
   border-radius: 14px;
-  z-index: 1111;
+  z-index: 10;
   overflow: hidden;
   display: flex;
   flex-direction: column;

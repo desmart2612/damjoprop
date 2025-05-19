@@ -56,45 +56,45 @@ window.addEventListener('resize', () => {
   window.carouselResizeTimeout = setTimeout(buildCarousel, 300);
 });
 
-// document.getElementById("whatsappForm").addEventListener("submit", function (e) {
-//   e.preventDefault();
-//   const name = document.getElementById("name").value.trim();
-//   // const email = document.getElementById("email").value.trim();
-//   const request = document.getElementById("request").value.trim();
-
-//   const message = `Hello, my name is ${name}.\n\nRequest: ${request}`;
-//   const encodedMessage = encodeURIComponent(message);
-
-//   const phoneNumber = "+254710622406"; // Replace with your WhatsApp number in international format
-//   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-
-//   window.open(whatsappURL, "_blank");
-// });
-
 document.getElementById("whatsappForm").addEventListener("submit", function (e) {
   e.preventDefault();
-
   const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
+  // const email = document.getElementById("email").value.trim();
   const request = document.getElementById("request").value.trim();
-  const btn = document.getElementById("sendbtn");
 
-  btn.innerHTML = "Sending...<img src='static/images/paper-plane.gif' width='25' height='25'/>";
-  btn.disabled = true;
+  const message = `Hello, my name is ${name}.\n\nRequest: ${request}`;
+  const encodedMessage = encodeURIComponent(message);
 
-  emailjs.send("service_ld4ti3s", "template_no2w8ry", {
-    name: name,
-    email: email,
-    message: request,
-  }).then(function(response) {    
-    btn.innerHTML = "Send";
-    btn.disabled = false;
-  }, function(error) {
-    alert("Failed to send email. Error: " + JSON.stringify(error));
-    btn.innerHTML = "Send";
-    btn.disabled = false;
-  });
+  const phoneNumber = "+254715140279"; // Replace with your WhatsApp number in international format
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+  window.open(whatsappURL, "_blank");
 });
+
+// document.getElementById("whatsappForm").addEventListener("submit", function (e) {
+//   e.preventDefault();
+
+//   const name = document.getElementById("name").value.trim();
+//   const email = document.getElementById("email").value.trim();
+//   const request = document.getElementById("request").value.trim();
+//   const btn = document.getElementById("sendbtn");
+
+//   btn.innerHTML = "Sending...<img src='static/images/paper-plane.gif' width='25' height='25'/>";
+//   btn.disabled = true;
+
+//   emailjs.send("service_ld4ti3s", "template_no2w8ry", {
+//     name: name,
+//     email: email,
+//     message: request,
+//   }).then(function(response) {    
+//     btn.innerHTML = "Send";
+//     btn.disabled = false;
+//   }, function(error) {
+//     alert("Failed to send email. Error: " + JSON.stringify(error));
+//     btn.innerHTML = "Send";
+//     btn.disabled = false;
+//   });
+// });
 
 document.getElementById("more").addEventListener("click", function () {
   // Navigate to products.html
