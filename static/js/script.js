@@ -65,7 +65,7 @@ document.getElementById("whatsappForm").addEventListener("submit", function (e) 
   const message = `Hello, my name is ${name}.\n\nRequest: ${request}`;
   const encodedMessage = encodeURIComponent(message);
 
-  const phoneNumber = "+254715140279"; // Replace with your WhatsApp number in international format
+  const phoneNumber = "+254103170576"; // Replace with your WhatsApp number in international format
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
   window.open(whatsappURL, "_blank");
