@@ -4,215 +4,403 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Damjo Properties — affordable plots, fertile land, and prime locations in Kenya. Title deed support and lost document recovery.">
+    <meta name="theme-color" content="#006823">
+    <meta property="og:title" content="Damjo Properties — Own The Land. Build The Dream.">
+    <meta property="og:description"
+        content="Discover affordable plots, houses, and expert help recovering land documents.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://damjoproperties.netlify.app/index.html">
+    <meta property="og:image" content="https://damjoproperties.netlify.app/static/images/hero_image.jpg">
+    <link rel="canonical" href="https://damjoproperties.netlify.app/index.html">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/css/styles.css">
-    <title>Damjo Properties</title>
+    <link rel="stylesheet" href="static/css/tokens_v2.css">
+    <link rel="stylesheet" href="static/css/components_v2.css">
+    <link rel="stylesheet" href="static/css/styles_v2.css">
+    <title>Damjo Properties — Land & Real Estate in Kenya</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Damjo Properties",
+      "url": "https://damjoproperties.netlify.app/index.html",
+      "telephone": "+254715140279",
+      "email": "damjoproperties@gmail.com",
+      "description": "Real estate company specializing in land plots, houses, and land document recovery in Kenya.",
+      "areaServed": "Kenya"
+    }
+    </script>
 </head>
 
 <body>
-    <div class="container-fluid" id="home">
-        <nav class="navbar navbar-expand-lg fixed-top" id="navbar" data-bs-theme="dark">
-            <div class="container-fluid">
-                <div class="navbar-brand d-flex align-items-center justify-content-center" id="company">
-                    <img src="static/images/logo.png" alt="" id="logo">
-                    <h4>Damjo Properties</h4>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-v2" aria-label="Main navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="static/images/logo.png" alt="Damjo Properties logo" id="logo" width="42" height="42">
+                <h4>Damjo Properties</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+                aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMain">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#plots">Plots</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Houses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#recovery">Document Recovery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div class="navbar-cta">
+                    <a class="btn btn-whatsapp btn-sm" data-whatsapp
+                        data-whatsapp-message="Hello Damjo Properties, I would like more information.">WhatsApp</a>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main">
+        <header class="hero-v2" id="hero">
+            <div class="hero-v2__bg" aria-hidden="true"></div>
+            <div class="hero-v2__overlay" aria-hidden="true"></div>
+            <div id="hero-visual" class="hero-v2__visual"></div>
+            <div class="hero-v2__content">
+                <div class="hero-v2__panel reveal">
+                    <h1>Own The Land.</h1>
+                    <h1>Build The Dream.</h1>
+                    <p>Discover affordable plots, fertile land and prime locations perfect for homes, investment, or
+                        agriculture.</p>
+                    <div class="hero-v2__actions">
+                        <a class="btn btn-primary" href="#plots">Browse plots</a>
+                        <a class="btn btn-whatsapp" data-whatsapp>Talk on WhatsApp</a>
+                        <a class="btn btn-outline" href="#contact">Contact us</a>
+                    </div>
+                    <p class="hero-v2__trust-line">Title deed guidance · Site visits · Transparent pricing</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="stats-v2" id="stats" aria-label="Company highlights">
+            <div class="stats-v2__grid" id="stats-grid"></div>
+        </section>
+
+        <section class="section section-alt reveal" id="why">
+            <div class="section-header">
+                <p class="eyebrow">Why Damjo</p>
+                <h2>Land you can trust</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="features-v2__grid">
+                <div class="feature-card reveal">
+                    <svg class="feature-card__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+                    </svg>
+                    <h3>Affordable options</h3>
+                    <p>Plots and acreage suited for first-time buyers and investors across Kenya.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <svg class="feature-card__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8zm-1 7h-2V9h2v1zm0-2h-2V7h2v1zm-4 6h8v2H8v-2z" />
+                    </svg>
+                    <h3>Title deed support</h3>
+                    <p>We guide you through verification and documentation for peace of mind.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <svg class="feature-card__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                    </svg>
+                    <h3>Prime locations</h3>
+                    <p>From urban plots to fertile agricultural land in growing corridors.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section plots-v2 reveal" id="plots">
+            <div class="section-header">
+                <p class="eyebrow">Trending choices</p>
+                <h2>Today's selling plots</h2>
+                <div class="divider"></div>
+            </div>
+            <div id="carousel-plots" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
+                <div class="carousel-indicators" id="carousel-indicators"></div>
+                <div class="carousel-inner" id="carousel-inner"></div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-plots"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#service">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contacts">Contact</a>
-                        </li>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-plots"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="see-more-v2">
+                <button type="button" class="btn-see-all" id="see-more-btn">See all listings</button>
+            </div>
+        </section>
+
+        <section class="section recovery-v2 section-alt reveal" id="recovery">
+            <div class="section-header">
+                <p class="eyebrow">Other services</p>
+                <h2>Recover lost land documents</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="recovery-v2__grid px-3">
+                <div class="recovery-v2__copy reveal">
+                    <h3>We've got you covered</h3>
+                    <p>Lost or damaged title deeds, surveys, or transfer papers? Our team helps you navigate recovery
+                        with clarity and care.</p>
+                    <div class="timeline mt-4">
+                        <div class="timeline__step">
+                            <span class="timeline__num">1</span>
+                            <div>
+                                <strong>Share what you have</strong>
+                                <p class="mb-0 small">IDs, old copies, or plot details — we assess your case.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__step">
+                            <span class="timeline__num">2</span>
+                            <div>
+                                <strong>We verify &amp; process</strong>
+                                <p class="mb-0 small">Coordination with relevant offices and status updates.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__step">
+                            <span class="timeline__num">3</span>
+                            <div>
+                                <strong>Documents restored</strong>
+                                <p class="mb-0 small">Typical turnaround varies by case; we keep you informed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recovery-v2__cta-box reveal">
+                    <h5>Look no further</h5>
+                    <h4>Covered.</h4>
+                    <p class="text-muted mb-3">Start with a quick message — we'll respond on WhatsApp.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#contactModal">Contact us</button>
+                    <a class="btn btn-whatsapp mt-2" data-whatsapp
+                        data-whatsapp-message="Hello Damjo Properties, I need help recovering lost land documents.">WhatsApp
+                        now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section reveal" id="testimonials">
+            <div class="section-header">
+                <p class="eyebrow">Testimonials</p>
+                <h2>What clients say</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="testimonials-v2__grid px-3">
+                <div class="testimonial-card reveal">
+                    <blockquote>"Damjo helped us secure a plot in Kasarani with clear paperwork. Professional from start
+                        to finish."</blockquote>
+                    <cite>— James M., Nairobi</cite>
+                </div>
+                <div class="testimonial-card reveal">
+                    <blockquote>"They recovered documents we thought were gone. Patient team and honest
+                        communication."</blockquote>
+                    <cite>— Grace W., Kiambu</cite>
+                </div>
+                <div class="testimonial-card reveal">
+                    <blockquote>"Affordable acreage in Nyandarua — exactly what we needed for our farm project."</blockquote>
+                    <cite>— Peter K., Nyandarua</cite>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt reveal" id="faq">
+            <div class="section-header">
+                <p class="eyebrow">FAQ</p>
+                <h2>Common questions</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="faq-v2 px-3">
+                <details class="faq-item reveal">
+                    <summary>Do listings include a title deed?</summary>
+                    <div class="faq-item__answer">Many of our plots and houses include title deed support. Ask about a
+                        specific listing before purchase — we'll confirm documentation status.</div>
+                </details>
+                <details class="faq-item reveal">
+                    <summary>Can I pay in installments?</summary>
+                    <div class="faq-item__answer">Selected plots offer flexible payment plans. Contact us with the plot
+                        name and we'll share available options.</div>
+                </details>
+                <details class="faq-item reveal">
+                    <summary>How do I schedule a site visit?</summary>
+                    <div class="faq-item__answer">Message us on WhatsApp or use the contact form. We'll arrange a visit
+                        at a time that works for you.</div>
+                </details>
+                <details class="faq-item reveal">
+                    <summary>How long does document recovery take?</summary>
+                    <div class="faq-item__answer">Timelines depend on your case and issuing authorities. We provide an
+                        estimate after reviewing your documents.</div>
+                </details>
+            </div>
+        </section>
+
+        <section class="section section-alt service-area-v2 reveal" id="map">
+            <div class="section-header">
+                <p class="eyebrow">Find us</p>
+                <h2>Our service area</h2>
+                <div class="divider"></div>
+                <p class="section-header__lead">We help clients across Nairobi, Kiambu, Nyandarua, and surrounding growth corridors.</p>
+            </div>
+            <div class="service-area-v2__layout">
+                <aside class="service-area-v2__panel reveal">
+                    <h3>Regions we serve</h3>
+                    <p class="service-area-v2__intro">Site visits and consultations are arranged by appointment. Tap a region below or open the map for directions.</p>
+                    <ul class="service-area-v2__regions" id="service-regions" role="list"></ul>
+                    <div class="service-area-v2__cards">
+                        <div class="service-area-v2__mini-card">
+                            <svg class="service-area-v2__mini-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5"/></svg>
+                            <div>
+                                <strong>Site visits</strong>
+                                <span>Scheduled on WhatsApp</span>
+                            </div>
+                        </div>
+                        <div class="service-area-v2__mini-card">
+                            <svg class="service-area-v2__mini-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8zm-1 7h-2V9h2v1zm0-2h-2V7h2v1zm-4 6h8v2H8v-2z"/></svg>
+                            <div>
+                                <strong>Document help</strong>
+                                <span>Kenya-wide support</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-area-v2__actions">
+                        <button type="button" class="btn btn-primary" id="book-visit-btn" data-book-visit>
+                            Book a visit
+                        </button>
+                        <a class="btn btn-outline service-area-v2__directions" id="map-directions" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
+                    </div>
+                </aside>
+                <div class="service-area-v2__map-wrap reveal">
+                    <div class="service-area-v2__map-badge">Nairobi hub · Kenya</div>
+                    <iframe class="service-area-v2__map" id="service-map" title="Damjo Properties service area — Kenya"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt reveal" id="contact">
+            <div class="section-header">
+                <p class="eyebrow">Reach out</p>
+                <h2>Our contacts</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-v2__grid px-3">
+                <div class="contact-v2__info reveal">
+                    <div class="contact-v2__row">
+                        <svg class="contact-v2__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02z" />
+                        </svg>
+                        <a href="tel:+254715140279" data-contact-phone>+254 715 140 279</a>
+                    </div>
+                    <div class="contact-v2__row">
+                        <svg class="contact-v2__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z" />
+                        </svg>
+                        <a href="mailto:damjoproperties@gmail.com" data-contact-email>damjoproperties@gmail.com</a>
+                    </div>
+                    <a class="btn btn-whatsapp mt-3" data-whatsapp>Chat on WhatsApp</a>
+                    <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal"
+                        data-bs-target="#contactModal">Send a message</button>
+                </div>
+                <div class="contact-v2__video reveal">
+                    <video src="static/videos/landscape.mp4" autoplay muted loop playsinline
+                        aria-label="Landscape video background"></video>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h3>Damjo Properties</h3>
+                    <p>We specialize in selling land and houses across Kenya, with support for title deeds and document
+                        recovery.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#plots">Plots</a></li>
+                        <li><a href="products.html">Houses</a></li>
+                        <li><a href="#recovery">Document recovery</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-        <div class="row text-left justify-content-start" id="hero">
-            <div class="col-12 col-md-6">
-                <h1>Own The Land.</h1>
-                <h1>Build The Dream.</h1>
-                <p>Discover affordable plots, fertile land and prime locations perfect for homes, investment, or
-                    agriculture.</p>
-            </div>
-        </div>
-        <div class="successes">
-            <div class="row row-cols-auto text-center py-3">
-                <div class="col d-flex justify-content-center align-items-center">
-                    <div>
-                        <img src="static/images/kindness-ezgif.com-gif-maker.gif" alt="">
-                        <h2>2.3K+</h2>
-                        <p>Happy Clients</p>
-                    </div>
-                    <div>
-                        <img src="static/images/building-ezgif.com-gif-maker.gif" alt="">
-                        <h2>1.K+</h2>
-                        <p>Plots Sold</p>
-                    </div>
-                    <div>
-                        <img src="static/images/search-ezgif.com-gif-maker.gif" alt="">
-                        <h2>3.2K+</h2>
-                        <p>Documents Recovered</p>
-                    </div>
+                <div class="col-md-4">
+                    <h3>Contact</h3>
+                    <p>Phone: <a href="tel:+254715140279" data-contact-phone></a></p>
+                    <p>Email: <a href="mailto:damjoproperties@gmail.com" data-contact-email></a></p>
+                    <p><a data-whatsapp>WhatsApp</a></p>
                 </div>
             </div>
-        </div>
-        <div class="text-center py-3" id="service">
-            <div class="services">
-                <p class="phrase">Trending Choices</p>
-                <h2>Today's Selling Plots</h2>
-                <div class="hr"></div>
+            <div class="site-footer__bottom">
+                <p>&copy; <span id="year"></span> Damjo Properties. <a href="index_old.html">View original site</a></p>
             </div>
         </div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators" id="carousel-indicators"></div>
+    </footer>
 
-            <div class="carousel-inner" id="carousel-inner">
-                <!-- Cards will be inserted here dynamically -->
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-        <!-- Hidden container holding original cards -->
-        <div id="card-data" class="d-none">
-            <div class="card m-2">
-                <img src="static/images/plot1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p>Price: Ksh <strong>4.5M</strong></p>
-                    <p>Location: <strong>Kasarani</strong></p>
-                    <p>Size: <strong>40 x 70</strong></p>
-                </div>
-            </div>
-            <div class="card m-2">
-                <img src="static/images/plot2.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p>Price: Ksh <strong>1.5M per acre</strong></p>
-                    <p>Location: <strong>Kinangop Nyandarua</strong></p>
-                    <p>Size: <strong>3-acre</strong></p>
-                </div>
-            </div>
-            <div class="card m-2">
-                <img src="static/images/plot3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p>Price: Ksh <strong>2.8M</strong></p>
-                    <p>Location: <strong>Juja Farm</strong></p>
-                    <p>Size: <strong>0.5-acre</strong></p>
-                </div>
-            </div>
-            <div class="card m-2">
-                <img src="static/images/plot4.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p>Price: Ksh <strong>3.2M</strong></p>
-                    <p>Location: <strong>Ruai</strong></p>
-                    <p>Size: <strong>1/4-acre</strong></p>
-                </div>
-            </div>                       
-        </div>
-        <div class="more" id="more">
-            <div class="bg">See more</div>
-            <div class="blob"></div>
-        </div>
-
-        <div class="service">
-            <div class="services" style="width: fit-content;">
-                <p class="phrase">Other Services.</p>
-                <h2>Recover Lost Land Documents.</h2>
-                <div class="hr"></div>
-            </div>
-            <div class="row justify-content-evenly align-items-center p-3">
-                <div id="service-text" class="col-12 col-md-5 mx-0 mx-md-2 my-3">
-                    <h5>
-                        Have you accidentally lost some of
-                        your land documents or they have
-                        been damaged and require help in
-                        recovering them?
-                    </h5>
-                </div>
-                <div id="service-assist" class="mx-0 mx-md-2 my-3 col-12 col-md-5 d-flex flex-column justify-content-center align-items-center">
-                    <h5>Look no further, we've got you</h5>
-                    <h4 style="font-weight: bold;">Covered.</h4>
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</button>
-                </div>
-            </div>
-        </div>
-        <div class="text-center py-3 d-flex flex-column justify-content-center align-items-center" id="contacts">
-            <div class="services" style="width: fit-content;">
-                <p class="phrase">Reach Out</p>
-                <h2>Our Contacts.</h2>
-                <div class="hr"></div>
-            </div>
-            <div class="contact-section row mt-4">
-                <!-- Contact Info -->
-                <div class="col-12 col-md-6 contact-info">
-                    <div class="phone d-flex align-items-center justify-content-evenly">
-                        <img src="static/images/phone-contact-ezgif.com-gif-maker.gif" alt="">
-                        <h5>+254 715 140 279</h5>
-                    </div>
-                    <div class="mail d-flex align-items-center justify-content-evenly">
-                        <img src="static/images/mail-ezgif.com-gif-maker.gif" alt="">
-                        <h5>damjoproperties@gmail.com</h5>
-                    </div>
-                </div>
-
-                <!-- Video Section -->
-                <div class="col-12 col-md-6 video-container">
-                    <video src="static/videos/landscape.mp4" autoplay muted loop playsinline></video>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="modal" tabindex="-1" id="exampleModal">
-        <div class="modal-dialog">
-            <div class="modal-content bg-info-subtle" data-bs-theme="dark">
-                <div class="modal-header">
-                    <h5 class="modal-title text-light">Reach Out.</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade modal-v2" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="contactModalLabel">Reach out</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form class="form" id="whatsappForm">
-                        <input type="text" class="input" id="name" placeholder="Enter your name" required />
-                        <!-- <input type="email" class="input" id="email" placeholder="Enter your email" required /> -->
-                        <!-- <input type="text" class="input" placeholder="Enter your email" /> -->
-                        <textarea name="content" class="input" id="request" rows="5" placeholder="Enter any information" required></textarea>
-                        <button type="submit" id="sendbtn">Send</button>
+                    <form class="form-v2" id="whatsappForm">
+                        <label class="visually-hidden" for="name">Your name</label>
+                        <input type="text" class="input-v2" id="name" name="name" placeholder="Enter your name"
+                            required autocomplete="name" />
+                        <div class="form-v2__visit-fields is-hidden" id="visit-fields">
+                            <label class="form-v2__label" for="visit-region">Region to visit</label>
+                            <select class="input-v2" id="visit-region" name="region">
+                                <option value="">Select a region (optional)</option>
+                            </select>
+                            <label class="form-v2__label" for="visit-date">Preferred date</label>
+                            <input type="date" class="input-v2" id="visit-date" name="visit-date" />
+                        </div>
+                        <label class="visually-hidden" for="request">Your message</label>
+                        <textarea class="input-v2" id="request" name="request" rows="5"
+                            placeholder="Tell us about the plot or service you need" required></textarea>
+                        <button type="submit" class="btn btn-whatsapp w-100" id="whatsapp-submit-btn">Send via WhatsApp</button>
+                        <button type="button" class="btn btn-outline w-100 is-hidden" id="book-visit-quick-whatsapp">
+                            Quick book on WhatsApp
+                        </button>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    <!-- <button type="button" class="btn btn-primary">Send via Whatsapp</button> -->
                 </div>
             </div>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script>
-        emailjs.init("xEd5h1mVbclUtEavi"); // Replace with your actual public key
-    </script>
-    <script src="static/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="static/js/config_v2.js"></script>
+    <script src="static/js/hero-visual_v2.js"></script>
+    <script src="static/js/animations_v2.js"></script>
+    <script src="static/js/script_v2.js"></script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 
 </html>

@@ -1,0 +1,140 @@
+/* Products / listings page — Damjo v2 */
+
+.products-page-v2 .hero-v2__bg {
+  background-image: url(../images/home2.jpg);
+}
+
+.products-page-v2 .back-v2 {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #00c3ff, #165efc);
+  color: #fff;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition), width var(--transition);
+}
+
+.products-page-v2 .back-v2:hover {
+  transform: translateX(-4px);
+  color: #fff;
+}
+
+.products-page-v2 .back-v2 svg {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.products-page-v2 .page-title-v2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  text-align: center;
+  margin: var(--space-lg) 0 var(--space-md);
+  background: linear-gradient(270deg, #00c3ff, var(--color-primary), #00c3ff);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .products-page-v2 .page-title-v2 {
+    animation: title-gradient 12s ease infinite;
+  }
+}
+
+@keyframes title-gradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.listings-grid-v2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-lg);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md) var(--space-xl);
+}
+
+.house-card-v2 {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.house-card-v2:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.house-card-v2__image {
+  aspect-ratio: 16 / 10;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+
+.house-card-v2:hover .house-card-v2__image {
+  transform: scale(1.03);
+}
+
+.house-card-v2__body {
+  padding: var(--space-md);
+  flex: 1;
+}
+
+.house-card-v2__body h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  margin-bottom: var(--space-xs);
+}
+
+.house-card-v2__body p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.house-card-v2__footer {
+  padding: 0 var(--space-md) var(--space-md);
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.plot-card-page-v2 .listing-card {
+  height: auto;
+}
+
+.modal-v2 .carousel-item img {
+  border-radius: var(--radius-sm);
+  max-height: 320px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.modal-v2 .modal-text p {
+  margin-bottom: 0.5rem;
+}
+
+.modal-v2 .modal-footer-note {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}

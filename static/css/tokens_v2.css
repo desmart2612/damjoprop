@@ -1,0 +1,54 @@
+:root {
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+
+  --color-primary: #e85d04;
+  --color-primary-dark: #c44d03;
+  --color-secondary: #0c4a6e;
+  --color-secondary-dark: #083552;
+  --color-accent: #090056;
+
+  /* Plot listing cards */
+  --plot-card-bg: #fffdf9;
+  --plot-card-bg-hover: #ffffff;
+  --plot-card-border: rgba(12, 74, 110, 0.12);
+  --plot-card-border-hover: rgba(232, 93, 4, 0.45);
+  --plot-card-accent: #0c4a6e;
+  --plot-card-accent-soft: #e8f4fc;
+  --plot-card-price: #c44d03;
+  --plot-card-text: #1f2937;
+  --plot-card-muted: #64748b;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f4f6f8;
+  --color-text: #1a1a1a;
+  --color-text-muted: #5c5c5c;
+  --color-text-inverse: #ffffff;
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-glass: rgba(0, 0, 0, 0.55);
+  --color-glass-border: rgba(255, 255, 255, 0.15);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 999px;
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.18);
+
+  --nav-height: 72px;
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --max-width: 1200px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition: 0.01ms;
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "plots": [
+    {
+      "id": "plot-kasarani",
+      "title": "Kasarani Plot",
+      "price": "Ksh 4.5M",
+      "location": "Kasarani",
+      "size": "40 x 70",
+      "image": "static/images/plot1.png",
+      "badges": ["Title deed", "Prime location"]
+    },
+    {
+      "id": "plot-kinangop",
+      "title": "Kinangop Nyandarua",
+      "price": "Ksh 1.5M per acre",
+      "location": "Kinangop Nyandarua",
+      "size": "3-acre",
+      "image": "static/images/plot2.png",
+      "badges": ["Agriculture", "Fertile land"]
+    },
+    {
+      "id": "plot-juja",
+      "title": "Juja Farm",
+      "price": "Ksh 2.8M",
+      "location": "Juja Farm",
+      "size": "0.5-acre",
+      "image": "static/images/plot3.png",
+      "badges": ["Growing area", "Installments"]
+    },
+    {
+      "id": "plot-ruai",
+      "title": "Ruai Plot",
+      "price": "Ksh 3.2M",
+      "location": "Ruai",
+      "size": "1/4-acre",
+      "image": "static/images/plot4.png",
+      "badges": ["Title deed", "Accessible"]
+    }
+  ],
+  "houses": [
+    {
+      "id": "house-bungalow-matangi",
+      "title": "Bungalow — Matangi, Kimbo",
+      "type": "Bungalow",
+      "price": "Ksh 6,000,000",
+      "priceNote": "Negotiable",
+      "location": "Matangi, Kimbo",
+      "size": "4 bedrooms",
+      "image": "static/images/house1.jpg",
+      "gallery": [
+        "static/images/img1.jpg",
+        "static/images/img2.jpg",
+        "static/images/img3.jpg"
+      ],
+      "details": "Beautiful bungalow in a serene environment, close to schools and shopping centers. Includes a title deed.",
+      "badges": ["Title deed", "Residential"]
+    }
+  ],
+  "stats": [
+    { "value": 2300, "suffix": "+", "label": "Happy Clients", "icon": "clients" },
+    { "value": 1000, "suffix": "+", "label": "Plots Sold", "icon": "plots" },
+    { "value": 3200, "suffix": "+", "label": "Documents Recovered", "icon": "documents" }
+  ]
+}
